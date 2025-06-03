@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Connect Wi-Fi & Visit Website</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <title>Login Wi-Fi</title>
   <script>
-    // Redirect ke website setelah delay (misal 10 detik)
-    setTimeout(() => {
-      window.location.href = "https://website-utama.com";
-    }, 10000);
+    // Redirect otomatis ke website lokal setelah 3 detik
+    setTimeout(function() {
+      window.location.href = "http://192.168.1.8/AppKasirRestoranWeb/";
+    }, 3000);
   </script>
 </head>
 <body>
-  <h2>Hubungkan ke Wi-Fi kami:</h2>
-  <p>SSID: NamaWifi</p>
-  <p>Password: PasswordWifi</p>
-
-  <!-- Tombol ini bisa dibuat jadi QR code Wi-Fi, supaya klik/tap langsung connect -->
-  <p>Atau scan QR code Wi-Fi berikut untuk koneksi cepat:</p>
-  <img src="wifi-qr-code.png" alt="QR Code Wi-Fi" style="width:200px;">
-
-  <hr>
-  <p>Setelah tersambung, kamu akan diarahkan ke website kami secara otomatis.</p>
+  <h2>Selamat datang di Wi-Fi kami</h2>
+  <p>Silakan login terlebih dahulu untuk mengakses internet.</p>
+  <p>Setelah login, kamu akan diarahkan otomatis ke aplikasi kasir restoran kami.</p>
+  <p>Jika tidak diarahkan otomatis, klik <a href="http://192.168.1.8/AppKasirRestoranWeb/">di sini</a>.</p>
 </body>
 </html>
