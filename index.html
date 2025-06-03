@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connect Wi-Fi & Visit Website</title>
+  <meta charset="UTF-8">
+  <script>
+    // Redirect ke website setelah delay (misal 10 detik)
+    setTimeout(() => {
+      window.location.href = "https://website-utama.com";
+    }, 10000);
+  </script>
+</head>
+<body>
+  <h2>Hubungkan ke Wi-Fi kami:</h2>
+  <p>SSID: NamaWifi</p>
+  <p>Password: PasswordWifi</p>
+
+  <!-- Tombol ini bisa dibuat jadi QR code Wi-Fi, supaya klik/tap langsung connect -->
+  <p>Atau scan QR code Wi-Fi berikut untuk koneksi cepat:</p>
+  <img src="wifi-qr-code.png" alt="QR Code Wi-Fi" style="width:200px;">
+
+  <hr>
+  <p>Setelah tersambung, kamu akan diarahkan ke website kami secara otomatis.</p>
+</body>
+</html>
