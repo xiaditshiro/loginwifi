@@ -2,18 +2,32 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Login Wi-Fi</title>
-  <script>
-    // Redirect otomatis ke website lokal setelah 3 detik
-    setTimeout(function() {
-      window.location.href = "http://192.168.1.8/AppKasirRestoranWeb/";
-    }, 3000);
-  </script>
+  <title>Wi-Fi & Aplikasi Restoran</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 400px; margin: auto; }
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px 0;
+      background-color: #0288d1;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+    }
+    a.button.secondary {
+      background-color: #43a047;
+    }
+  </style>
 </head>
 <body>
-  <h2>Selamat datang di Wi-Fi kami</h2>
-  <p>Silakan login terlebih dahulu untuk mengakses internet.</p>
-  <p>Setelah login, kamu akan diarahkan otomatis ke aplikasi kasir restoran kami.</p>
-  <p>Jika tidak diarahkan otomatis, klik <a href="http://192.168.1.8/AppKasirRestoranWeb/">di sini</a>.</p>
+  <h2>Selamat datang di Wi-Fi Restoran</h2>
+
+  <p>Silakan klik tombol berikut untuk menyambungkan ke Wi-Fi restoran:</p>
+  <a href="WIFI:T:WPA;S=Shiro;P=nogamenolife;;" class="button">Connect ke Wi-Fi Restoran</a>
+
+  <p>Setelah terhubung, buka aplikasi kasir restoran:</p>
+  <a href="http://192.168.1.8/AppKasirRestoranWeb/" class="button secondary">Buka Aplikasi Kasir Restoran</a>
 </body>
 </html>
